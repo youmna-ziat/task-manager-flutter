@@ -1,64 +1,81 @@
-# Task Manager - Flutter MVC Application
+# 📋 Task Manager - Flutter MVC Application
 
-## Description
+## 📖 Présentation
 
 Task Manager est une application mobile développée avec Flutter permettant aux utilisateurs de gérer efficacement leurs tâches quotidiennes.
 
-L'application a été réalisée dans le cadre du mini-projet du module Flutter. Elle respecte l'architecture MVC (Model - View - Controller) et intègre les principales fonctionnalités d'une application mobile moderne.
+Ce projet a été réalisé dans le cadre du mini-projet du module **Développement Mobile avec Flutter** (2ème année Cycle Ingénieur 2025/2026).
+
+L'application respecte l'architecture **MVC (Model - View - Controller)** et intègre les principales fonctionnalités demandées dans le cahier des charges.
 
 ---
 
-## Fonctionnalités
+# 🎯 Objectifs du Projet
 
-### Authentification
+* Développer une application mobile complète avec Flutter
+* Appliquer l'architecture MVC
+* Mettre en œuvre l'authentification utilisateur
+* Réaliser les opérations CRUD
+* Utiliser une base de données locale SQLite
+* Concevoir une interface moderne et responsive
+* Respecter les bonnes pratiques de développement
 
-* Inscription utilisateur
+---
+
+# ✨ Fonctionnalités Réalisées
+
+## 🔐 Authentification
+
+* Création de compte utilisateur
 * Connexion utilisateur
-* Validation des informations saisies
+* Validation des champs
+* Vérification des identifiants
 
-### Gestion des tâches
+## ✅ Gestion des Tâches
 
 * Ajouter une tâche
 * Modifier une tâche
 * Supprimer une tâche
 * Marquer une tâche comme terminée
-* Filtrer les tâches
+* Gestion des priorités
+* Gestion des catégories
 
-### Statistiques
+## 📊 Statistiques
 
 * Nombre total de tâches
 * Nombre de tâches terminées
 * Nombre de tâches en attente
 
-### Stockage local
+## 💾 Stockage Local
 
 * Sauvegarde des utilisateurs avec SQLite
 * Sauvegarde des tâches avec SQLite
 * Conservation des données après fermeture de l'application
 
-### Interface utilisateur
+## 🎨 Interface Utilisateur
 
-* Interface moderne et responsive
-* Design Material 3
+* Interface moderne avec Material Design 3
 * Navigation fluide entre les écrans
+* Responsive Design
 * Thème personnalisé
+* Support du Dark Mode (si activé par le système)
 
 ---
 
-## Architecture MVC
+# 🏗️ Architecture MVC
 
-Le projet suit l'architecture MVC :
+Le projet est organisé selon le modèle MVC.
 
-### Model
+## Model
 
-Contient les modèles de données :
+Les modèles représentent les données manipulées par l'application.
 
 * Task
 * User
 
-### View
+## View
 
-Contient les interfaces graphiques :
+Les vues représentent l'interface utilisateur.
 
 * LoginView
 * RegisterView
@@ -67,32 +84,22 @@ Contient les interfaces graphiques :
 * EditTaskView
 * StatsView
 
-### Controller
+## Controller
 
-Contient la logique métier :
+Les contrôleurs contiennent la logique métier.
 
 * AuthController
 * TaskController
 
-### Database
+## Database
 
-Gestion de la base SQLite :
+Gestion de la base de données locale SQLite.
 
 * DatabaseHelper
 
 ---
 
-## Technologies Utilisées
-
-* Flutter
-* Dart
-* SQLite
-* Material Design 3
-* Architecture MVC
-
----
-
-## Structure du Projet
+# 📁 Structure du Projet
 
 ```text
 lib/
@@ -119,14 +126,97 @@ lib/
 └── main.dart
 ```
 
+---
 
+# 🛠️ Technologies Utilisées
 
+| Technologie       | Utilisation              |
+| ----------------- | ------------------------ |
+| Flutter           | Développement mobile     |
+| Dart              | Langage de programmation |
+| SQLite            | Base de données locale   |
+| Material Design 3 | Interface utilisateur    |
+| MVC               | Architecture logicielle  |
 
-## Réalisé par
+---
+
+# 🚀 Installation
+
+## 1. Cloner le projet
+
+```bash
+git clone https://github.com/youmna-ziat/task-manager-flutter.git
+```
+
+## 2. Accéder au dossier
+
+```bash
+cd task-manager-flutter
+```
+
+## 3. Installer les dépendances
+
+```bash
+flutter pub get
+```
+
+## 4. Lancer l'application
+
+```bash
+flutter run
+```
+
+---
+
+# 📱 Écrans Principaux
+
+* Écran de connexion
+* Écran d'inscription
+* Liste des tâches
+* Ajout d'une tâche
+* Modification d'une tâche
+* Tableau des statistiques
+
+---
+
+# 🎥 Démonstration
+
+Une vidéo de démonstration présentant les principales fonctionnalités de l'application accompagne le rapport du projet.
+
+Fonctionnalités démontrées :
+
+* Création d'un compte
+* Connexion
+* Ajout de tâches
+* Modification de tâches
+* Suppression de tâches
+* Gestion des statuts
+* Consultation des statistiques
+
+---
+
+# 📌 Fonctionnalités du Cahier des Charges Respectées
+
+* Authentification (Login / Register)
+* Navigation entre plusieurs écrans
+* CRUD complet
+* Utilisation de formulaires
+* Validation des champs
+* Stockage local SQLite
+* Interface moderne et responsive
+* Architecture MVC
+* Design personnalisé
+* Statistiques des tâches
+
+---
+
+# 👨‍💻 Réalisé Par
 
 ZIAT Youmna
 RIAK Yasser
 
-2ème année Cycle Ingénieur
+2ème Année Cycle Ingénieur
 
-Projet Flutter 2025/2026
+Année Universitaire 2025/2026
+
+---
