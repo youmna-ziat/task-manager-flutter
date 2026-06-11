@@ -21,7 +21,7 @@ class _HomeViewState extends State<HomeView> {
   final TaskController _controller = TaskController();
   bool _isLoading = true;
   String _filterCategory = 'Toutes';
-  String _filterPriority = 'Toutes';
+  final String _filterPriority = 'Toutes';
   bool _showCompleted = true;
 
   final List<String> _categories = [
@@ -178,7 +178,7 @@ class _HomeViewState extends State<HomeView> {
                         child: ListView.separated(
                           scrollDirection: Axis.horizontal,
                           itemCount: _categories.length,
-                          separatorBuilder: (_, __) =>
+                          separatorBuilder: (_, _) =>
                               const SizedBox(width: 8),
                           itemBuilder: (_, i) {
                             final cat = _categories[i];

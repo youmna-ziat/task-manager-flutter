@@ -11,13 +11,15 @@ class AuthController {
       String username, String email, String password) async {
     // Validation
     if (username.trim().isEmpty) return 'Le nom d\'utilisateur est requis';
-    if (username.trim().length < 3)
+    if (username.trim().length < 3) {
       return 'Le nom doit contenir au moins 3 caractères';
+    }
     if (email.trim().isEmpty) return 'L\'email est requis';
     if (!_isValidEmail(email)) return 'Email invalide';
     if (password.isEmpty) return 'Le mot de passe est requis';
-    if (password.length < 6)
+    if (password.length < 6) {
       return 'Le mot de passe doit contenir au moins 6 caractères';
+    }
 
     // Vérifier si l'email existe déjà
     final exists = await _dbHelper.emailExists(email.trim());
