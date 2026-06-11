@@ -74,11 +74,12 @@ class _AddTaskViewState extends State<AddTaskView> {
 
               const SizedBox(height: 16),
 
-              DropdownButtonFormField<String>(
-                initialValue: category,
-                decoration: const InputDecoration(
-                  labelText: "Catégorie",
-                ),
+              // APRÈS
+DropdownButtonFormField<String>(
+  value: category,
+  decoration: const InputDecoration(
+    labelText: "Catégorie",
+  ),
                 items: const [
                   DropdownMenuItem(
                     value: "General",
@@ -107,7 +108,7 @@ class _AddTaskViewState extends State<AddTaskView> {
               const SizedBox(height: 16),
 
               DropdownButtonFormField<String>(
-                initialValue: priority,
+                value: priority,
                 decoration: const InputDecoration(
                   labelText: "Priorité",
                 ),

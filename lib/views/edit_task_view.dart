@@ -93,7 +93,7 @@ class _EditTaskViewState extends State<EditTaskView> {
               const SizedBox(height: 16),
 
               DropdownButtonFormField<String>(
-                initialValue: category,
+                value: category,
                 items: const [
                   DropdownMenuItem(
                     value: "General",
@@ -122,7 +122,7 @@ class _EditTaskViewState extends State<EditTaskView> {
               const SizedBox(height: 16),
 
               DropdownButtonFormField<String>(
-                initialValue: priority,
+                value: priority,
                 items: const [
                   DropdownMenuItem(
                     value: "high",
